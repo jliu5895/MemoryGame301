@@ -41,11 +41,11 @@ public class MemoryGameFrame {
         frame.setJMenuBar(createMenuBar());
         frame.setResizable(true);
         frame.addWindowListener(new WindowAdapter() {
-            @Override
             public void windowClosing(WindowEvent event) {
                 shutdown();
             }
         });
+        
         frame.add(createTitlePanel(), BorderLayout.NORTH);
         frame.add(buttonPanel.getPanel(), BorderLayout.SOUTH);
         frame.pack();

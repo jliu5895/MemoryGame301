@@ -5,6 +5,7 @@ import javax.swing.UIManager;
 
 import edu.wm.cs.cs301.guimemorygame.model.GUIMemoryGameModel;
 import edu.wm.cs.cs301.guimemorygame.view.MemoryGameFrame;
+import edu.wm.cs.cs301.guimemorygame.view.NameDialog;
 
 
 public class GuiMemoryGame implements Runnable{
@@ -23,6 +24,6 @@ public class GuiMemoryGame implements Runnable{
 
 	@Override
 	public void run() {
-		new MemoryGameFrame(new GUIMemoryGameModel());
+		new NameDialog(new MemoryGameFrame(new GUIMemoryGameModel()));
 	}
 }

@@ -17,7 +17,6 @@ public class SelectionAction implements ActionListener {
     public SelectionAction(MemoryGameFrame view, GUIMemoryGameModel model) {
         this.view = view;
         this.model = model;
-        
     }
 
     @Override
