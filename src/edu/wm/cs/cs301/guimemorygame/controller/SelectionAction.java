@@ -35,6 +35,7 @@ public class SelectionAction implements ActionListener {
             	if (model.checkMatchFound()) {
             		 System.out.println("Match found!");
             		 model.resetComparisonTiles();
+            		 view.getButtonPanel().updateCurrentTurn();
             	}
             	else {
             		view.getButtonPanel().disableButtons();

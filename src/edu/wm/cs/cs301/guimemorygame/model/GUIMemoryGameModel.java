@@ -127,7 +127,6 @@ public class GUIMemoryGameModel{
 		this.currentTurn++;
 	    if (firstComparison.equals(secondComparison)) {
 	    	this.pairsFound++;
-	    	this.currentTurn++;
 	    	return true;
 	    }else {
 	    	firstComparison.setVisible(false);
