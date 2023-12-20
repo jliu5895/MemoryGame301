@@ -3,6 +3,9 @@ package edu.wm.cs.cs301.guimemorygame;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
+import edu.wm.cs.cs301.guimemorygame.model.GUIMemoryGameModel;
+import edu.wm.cs.cs301.guimemorygame.view.MemoryGameFrame;
+
 
 public class GuiMemoryGame implements Runnable{
 
@@ -20,6 +23,6 @@ public class GuiMemoryGame implements Runnable{
 
 	@Override
 	public void run() {
-		new GUIMemoryGameFrame(new GUIMemoryGameModel());
+		new MemoryGameFrame(new GUIMemoryGameModel());
 	}
 }

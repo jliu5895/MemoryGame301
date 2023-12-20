@@ -56,7 +56,7 @@ public class ReadSymbolsRunnable implements Runnable{
 
 		List<Character> symbolList = new ArrayList<>();
 
-		String text = "Emojis.txt";
+		String text = "ChineseSymbols.txt";
 		ClassLoader loader = this.getClass().getClassLoader();
 		InputStream stream = loader.getResourceAsStream(text);
 

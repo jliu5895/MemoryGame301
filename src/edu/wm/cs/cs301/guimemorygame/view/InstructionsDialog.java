@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 
-public class InstructionsDialog extends JDialog {
+ public class InstructionsDialog extends JDialog {
 
 	private static final long serialVersionUID = 1L;
 	

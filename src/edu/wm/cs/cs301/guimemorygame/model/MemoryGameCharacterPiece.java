@@ -31,4 +31,9 @@ public class MemoryGameCharacterPiece implements MemoryGamePiece {
 		return this.symbol.equals(other.getSymbol()) && this.visibility == other.isVisible();
 	}
 	
+	@Override
+    public String toString() {
+        return String.valueOf(symbol);
+    }
+	
 }
