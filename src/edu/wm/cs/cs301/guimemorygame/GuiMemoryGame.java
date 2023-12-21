@@ -24,6 +24,6 @@ public class GuiMemoryGame implements Runnable{
 
 	@Override
 	public void run() {
-		new NameDialog(new MemoryGameFrame(new GUIMemoryGameModel()));
+		new NameDialog((new MemoryGameFrame(new GUIMemoryGameModel())));
 	}
 }
