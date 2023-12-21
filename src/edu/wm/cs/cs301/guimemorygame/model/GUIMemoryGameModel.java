@@ -8,9 +8,10 @@ import java.util.List;
 import java.util.Random;
 
 import edu.wm.cs.cs301.guimemorygame.controller.ReadSymbolsRunnable;
+import edu.wm.cs.cs301.guimemorygame.view.NameDialog;
 
 public class GUIMemoryGameModel{
-	
+	private static String playerName;
 	private MemoryGamePiece[][] gameBoard;
 	
 	private List<Character> SymbolList, UniqueSymbolList;
@@ -34,10 +35,13 @@ public class GUIMemoryGameModel{
 	
 	private final Random random;
 	
+	private LeaderBoard leaderboard;
+	
+	private NameDialog name;
 	
 	public GUIMemoryGameModel() {
-		this.columnCount = 4;
-		this.maximumRows = 7;
+		this.columnCount = 7;
+		this.maximumRows = 4;
 		this.random = new Random();
 		this.pairsFound = 0;
 		this.currentTurn = 1;
@@ -48,6 +52,7 @@ public class GUIMemoryGameModel{
 		createSymbolList();
 		setGameBoard();
 		printGameBoard();
+		this.leaderboard = new LeaderBoard(getMaximumRows());
 	}
 	
 	public void initialize() {
@@ -60,6 +65,7 @@ public class GUIMemoryGameModel{
 		createSymbolList();
 		setGameBoard();
 		printGameBoard();
+		this.leaderboard = new LeaderBoard(getMaximumRows());
 	}
 	
 	private void createSymbolList() {		
@@ -203,6 +209,10 @@ public class GUIMemoryGameModel{
 		MemoryGamePiece piece = gameBoard[row][col];
 		return piece.toString();
 	}
+	
+	public LeaderBoard getLeaderBoard() {
+		return leaderboard;
+	}
 
 	public void printGameBoard() {
 	    for (int row = 0; row < gameBoard.length; row++) {
@@ -211,5 +221,12 @@ public class GUIMemoryGameModel{
 	        }
 	        System.out.println(); // Move to the next line after each row
 	    }
+	}
+	
+	public static String getName() {
+		return playerName;
+	}
+	public static void setName(String i) {
+		playerName = i;
 	}
 }

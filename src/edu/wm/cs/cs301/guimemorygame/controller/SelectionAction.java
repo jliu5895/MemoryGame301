@@ -8,11 +8,13 @@ import edu.wm.cs.cs301.guimemorygame.model.GUIMemoryGameModel;
 import edu.wm.cs.cs301.guimemorygame.view.LeaderBoardDialog;
 import edu.wm.cs.cs301.guimemorygame.view.MemoryGameFrame;
 import edu.wm.cs.cs301.guimemorygame.view.WrongSelectionDialog;
+import edu.wm.cs.cs301.guimemorygame.view.NameDialog;
 
 public class SelectionAction implements ActionListener {
 
     private final MemoryGameFrame view;
     private final GUIMemoryGameModel model;
+    
     
     public SelectionAction(MemoryGameFrame view, GUIMemoryGameModel model) {
         this.view = view;
@@ -61,6 +63,7 @@ public class SelectionAction implements ActionListener {
             new WrongSelectionDialog(view);
         } if (model.isGameWon()) {
         	System.out.println("WON");
+        	model.getLeaderBoard().writeLeaderboard(model.getCurrentTurn(),  GUIMemoryGameModel.getName());
         	new LeaderBoardDialog(view, model);
         }
     }

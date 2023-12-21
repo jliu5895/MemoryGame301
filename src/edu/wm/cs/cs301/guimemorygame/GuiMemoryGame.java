@@ -9,7 +9,7 @@ import edu.wm.cs.cs301.guimemorygame.view.NameDialog;
 
 
 public class GuiMemoryGame implements Runnable{
-
+	
 	public static void main(String[] args) {
 			SwingUtilities.invokeLater(new GuiMemoryGame());
 			

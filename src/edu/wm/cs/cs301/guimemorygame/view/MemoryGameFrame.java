@@ -28,7 +28,7 @@ public class MemoryGameFrame {
     private final JFrame frame;
     private final ButtonPanel buttonPanel;
     private final GUIMemoryGameModel model;
-
+ 
     public MemoryGameFrame(GUIMemoryGameModel model) {
     	this.model = model;
         this.buttonPanel = new ButtonPanel(this, model);
