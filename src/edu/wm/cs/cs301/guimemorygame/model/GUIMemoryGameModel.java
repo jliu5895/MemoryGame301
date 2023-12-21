@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Random;
 
 import edu.wm.cs.cs301.guimemorygame.controller.ReadSymbolsRunnable;
-import edu.wm.cs.cs301.guimemorygame.view.NameDialog;
 
 public class GUIMemoryGameModel{
 	private static String playerName;
@@ -37,8 +36,7 @@ public class GUIMemoryGameModel{
 	
 	private LeaderBoard leaderboard;
 	
-	private NameDialog name;
-	
+
 	public GUIMemoryGameModel() {
 		this.columnCount = 7;
 		this.maximumRows = 4;
