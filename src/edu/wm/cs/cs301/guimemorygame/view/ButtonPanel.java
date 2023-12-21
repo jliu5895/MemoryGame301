@@ -48,7 +48,7 @@ public class ButtonPanel {
         }
 
         panel.add(buttonsPanel, BorderLayout.CENTER);
-        panel.add(createTurnsPanel(), BorderLayout.SOUTH);  // Add the turns panel at the bottom
+        panel.add(createTurnsPanel(), BorderLayout.SOUTH);  
     }
 
     private JPanel createTurnsPanel() {
@@ -74,9 +74,8 @@ public class ButtonPanel {
         turnsPanel.add(label);
 
        
-        panel.remove(1); // Assumes the turns panel is at index 1, adjust if needed
+        panel.remove(1);
         panel.add(turnsPanel, BorderLayout.SOUTH);
-        // Repaint the panel to reflect the changes
         panel.revalidate();
         panel.repaint();
     }
@@ -92,7 +91,6 @@ public class ButtonPanel {
                 JButton button = buttons[row][column];
                 button.setText("?");
                 button.setEnabled(true);
-                // Reset any other properties you may have changed during the game
             }
         }
     }
@@ -122,6 +120,8 @@ public class ButtonPanel {
     public JPanel getPanel() {
         return panel;
     }
+    
+
 
     public void setText(JButton jButton, String string) {
         jButton.setText(string);

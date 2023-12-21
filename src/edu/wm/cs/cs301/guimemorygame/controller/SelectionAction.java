@@ -62,7 +62,7 @@ public class SelectionAction implements ActionListener {
             new WrongSelectionDialog(view);
         } if (model.isGameWon()) {
         	System.out.println("WON");
-        	model.getLeaderBoard().writeLeaderboard(model.getCurrentTurn(),  GUIMemoryGameModel.getName());
+        	model.getLeaderBoard().writeLeaderboard(model.getCurrentTurn()-1,  GUIMemoryGameModel.getName());
         	new LeaderBoardDialog(view, model);
         }
     }
