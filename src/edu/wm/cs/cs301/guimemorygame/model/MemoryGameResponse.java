@@ -5,13 +5,11 @@ import java.awt.Color;
 public class MemoryGameResponse{
 	
 	private final Character c;
-	private final ColorResponse colorResponse;
 	private boolean visibility;
 	
 	public MemoryGameResponse(Character c, Color backgroundColor, Color foregroundcolor) {
 		this.c = c;
 		this.visibility = false;
-		this.colorResponse = new ColorResponse(backgroundColor, foregroundcolor);
 	}
 	
 	public Character getSymbol() 
@@ -35,13 +33,6 @@ public class MemoryGameResponse{
 		return this.c.equals(other.getSymbol()) && this.visibility == other.isVisible();
 	}
 	
-	public Color getBackgroundColor() {
-		return colorResponse.getBackgroundColor();
-	}
-
-	public Color getForegroundColor() {
-		return colorResponse.getForegroundColor();
-	}
 	
 	
 }
