@@ -8,7 +8,6 @@ import edu.wm.cs.cs301.guimemorygame.model.GUIMemoryGameModel;
 import edu.wm.cs.cs301.guimemorygame.view.LeaderBoardDialog;
 import edu.wm.cs.cs301.guimemorygame.view.MemoryGameFrame;
 import edu.wm.cs.cs301.guimemorygame.view.WrongSelectionDialog;
-import edu.wm.cs.cs301.guimemorygame.view.NameDialog;
 
 public class SelectionAction implements ActionListener {
 

@@ -5,7 +5,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
+
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -14,7 +14,7 @@ import java.awt.GridLayout;
 import javax.swing.BorderFactory;
 
 import edu.wm.cs.cs301.guimemorygame.controller.SelectionAction;
-import edu.wm.cs.cs301.guimemorygame.model.AppColors;
+
 import edu.wm.cs.cs301.guimemorygame.model.GUIMemoryGameModel;
 
 public class ButtonPanel {
