@@ -49,7 +49,6 @@ public class GUIMemoryGameModel{
 		
 		createSymbolList();
 		setGameBoard();
-		printGameBoard();
 		this.leaderboard = new LeaderBoard(getMaximumRows());
 	}
 	
@@ -62,7 +61,6 @@ public class GUIMemoryGameModel{
 		this.UniqueSymbolList = new ArrayList<>();
 		createSymbolList();
 		setGameBoard();
-		printGameBoard();
 		this.leaderboard = new LeaderBoard(getMaximumRows());
 	}
 	
@@ -207,18 +205,9 @@ public class GUIMemoryGameModel{
 		MemoryGamePiece piece = gameBoard[row][col];
 		return piece.toString();
 	}
-	
+
 	public LeaderBoard getLeaderBoard() {
 		return leaderboard;
-	}
-
-	public void printGameBoard() {
-	    for (int row = 0; row < gameBoard.length; row++) {
-	        for (int col = 0; col < gameBoard[row].length; col++) {
-	            System.out.print(gameBoard[row][col] + " ");
-	        }
-	        System.out.println(); // Move to the next line after each row
-	    }
 	}
 	
 	public static String getName() {
