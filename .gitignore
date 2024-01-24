@@ -3,7 +3,7 @@
 
 # Log file
 *.log
-logging.*
+logging.txt*
 
 # eclipse specific
 *.pydevproject
