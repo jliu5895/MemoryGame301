@@ -101,7 +101,7 @@ public class LeaderBoardDialog extends JDialog{
 		JLabel label;
 		panel.setBorder(BorderFactory.createEmptyBorder(0, 5, 5, 5));
 		
-		label = new JLabel("Congrats! You found all the pairs!");
+		label = new JLabel("Congrats! You found all the pairs in " + (model.getCurrentTurn()-1) + " turns!");
 		
 		panel.add(label, BorderLayout.CENTER);
 		
